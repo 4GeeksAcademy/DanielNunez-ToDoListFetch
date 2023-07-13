@@ -77,15 +77,15 @@ const Home = () => {
 	}
  	return (
 		<div className="text-center">
-			<h1>Lista de tareas</h1>
-			<input 
+			<h1>To do list</h1>
+			<input style={{marginRight: "100px", marginLeft: "1000px"}}
 			className="form-control"
 			type="text" 
 			value={tarea}
 			onChange={(e) => setTarea(e.target.value)}/>
-			<button onClick={envioTarea}>Add task</button>
+			<button style={{marginTop: "10px"}} onClick={envioTarea}>Add task</button>
 			<br />
-			<div style={{marginTop: "10px"}}>
+			<div style={{marginTop: "10px", marginLeft: "100px", marginRight: "100px"}}>
 			<ul className="list-group">
 				{lista.map((item,id) => (
 					<li className="list-group-item" key={id}>
